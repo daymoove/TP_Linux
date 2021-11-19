@@ -46,6 +46,8 @@ File path : /srv/yt/downloads/Me in online class #shorts/Me in online class #sho
 
 **Fichier service** : [yt.service](./yt.service)
 
+On peut verifier le status su service avec la commande ```systemctl status yt.service```:
+
 ```
 daymoove@daymoove-vm:/srv/yt$ systemctl status yt.service
 ● yt.service - Put Your video in the yt_dl file to download the video
@@ -60,6 +62,8 @@ daymoove@daymoove-vm:/srv/yt$ systemctl status yt.service
 
 nov. 19 12:54:30 daymoove-vm systemd[1]: Started Put Your video in the yt_dl file to download the video.
 ```
+
+Les logs du service peuvent être observé avec la commande ```journalctl -xe -u yt```
 
 ```
 daymoove@daymoove-vm:/srv/yt$ journalctl -xe -u yt
