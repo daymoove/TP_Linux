@@ -1,0 +1,8 @@
+[Unit]
+Description=Put Your video in the yt_dl file to download the video
+
+[Service]
+ExecStart=bash /srv/yt/yt-v2.sh
+
+[Install]
+WantedBy=multi-user.target
