@@ -79,4 +79,4 @@ nov. 19 12:54:30 daymoove-vm systemd[1]: Started Put Your video in the yt_dl fil
 nov. 19 13:00:20 daymoove-vm bash[49217]: Video https://youtu.be/jNQXAC9IVRw was downloaded.
 ```
 
-La commande ```daymoove@daymoove-vm:/srv/yt$ systemctl enable yt``` permet de lancer le service au démarage de la machine.
+La commande ```systemctl enable yt``` permet de lancer le service au démarage de la machine.
