@@ -385,7 +385,7 @@ sudo chown web index.html
 ```
 [daymoove@localhost super_site_web]$ ls -al
 [...]
--rw-r--r--. 1 web  root 14 Nov 23 12:52 index.htm
+-rw-r--r--. 1 web  root 14 Nov 23 12:52 index.html
 ```
 
 On change la racine web :
