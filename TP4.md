@@ -280,6 +280,8 @@ tcp   LISTEN 0      128          0.0.0.0:webcache      0.0.0.0:*
 tcp   LISTEN 0      128             [::]:webcache         [::]:*
 ```
 
+On modifie le firewall :
+
 ```
 [daymoove@localhost nginx]$ sudo firewall-cmd --remove-port=80/tcp --permanent
 success
@@ -294,6 +296,8 @@ success
 [daymoove@localhost nginx]$ sudo firewall-cmd --reload
 success
 ```
+
+Sur le PC :
 
 ```
 C:\Users\Robert>curl http://10.200.1.69:8080
@@ -384,6 +388,8 @@ sudo chown web index.html
 -rw-r--r--. 1 web  root 14 Nov 23 12:52 index.htm
 ```
 
+On change la racine web :
+
 ```
 sudo vi /etc/nginx/nginx.conf
 ```
@@ -401,7 +407,7 @@ systemctl restart nginx.service
 
 
 Sur le PC :
-S
+
 ```
 C:\Users\Robert>curl http://10.200.1.69:8080
 <html>
