@@ -153,43 +153,6 @@ sortie :
 
 ```
 [...]
-Installed:
-  gd-2.2.5-7.el8.x86_64
-  jbigkit-libs-2.1-14.el8.x86_64
-  libXpm-3.5.12-8.el8.x86_64
-  libjpeg-turbo-1.5.3-12.el8.x86_64
-  libtiff-4.0.9-20.el8.x86_64
-  libwebp-1.0.0-5.el8.x86_64
-  nginx-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  nginx-all-modules-1:1.14.1-9.module+el8.4.0+542+81547229.noarch
-  nginx-filesystem-1:1.14.1-9.module+el8.4.0+542+81547229.noarch
-  nginx-mod-http-image-filter-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  nginx-mod-http-perl-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  nginx-mod-http-xslt-filter-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  nginx-mod-mail-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  nginx-mod-stream-1:1.14.1-9.module+el8.4.0+542+81547229.x86_64
-  perl-Carp-1.42-396.el8.noarch
-  perl-Data-Dumper-2.167-399.el8.x86_64
-  perl-Digest-1.17-395.el8.noarch
-  perl-Digest-MD5-2.55-396.el8.x86_64
-  perl-Encode-4:2.97-3.el8.x86_64
-  perl-Errno-1.28-420.el8.x86_64
-  perl-Exporter-5.72-396.el8.noarch
-  perl-File-Path-2.15-2.el8.noarch
-  perl-File-Temp-0.230.600-1.el8.noarch
-  perl-Getopt-Long-1:2.50-4.el8.noarch
-  perl-HTTP-Tiny-0.074-1.el8.noarch
-  perl-IO-1.38-420.el8.x86_64
-  perl-IO-Socket-IP-0.39-5.el8.noarch
-  perl-IO-Socket-SSL-2.066-4.module+el8.4.0+512+d4f0fc54.noarch
-  perl-MIME-Base64-3.15-396.el8.x86_64
-  perl-Mozilla-CA-20160104-7.module+el8.4.0+529+e3b3e624.noarch
-  perl-Net-SSLeay-1.88-1.module+el8.4.0+512+d4f0fc54.x86_64
-  perl-PathTools-3.74-1.el8.x86_64
-  perl-Pod-Escapes-1:1.07-395.el8.noarch
-  perl-Pod-Perldoc-3.28-396.el8.noarch
-  perl-Pod-Simple-1:3.35-395.el8.noarch
-  perl-Pod-Usage-4:1.69-395.el8.noarch
   perl-Scalar-List-Utils-3:1.49-2.el8.x86_64
   perl-Socket-4:2.027-3.el8.x86_64
   perl-Storable-1:3.11-3.el8.x86_64
@@ -276,7 +239,7 @@ success
 Sur le PC :
 
 ```
-C:\Users\Robert>curl http://10.200.1.69:80
+C:\Users\Robert>curl http://10.200.1.69:8080
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -292,122 +255,7 @@ C:\Users\Robert>curl http://10.200.1.69:80
         font-family: sans-serif, helvetica;
         margin: 0;
         padding: 0;
-      }
-      :link {
-        color: #c00;
-      }
-      :visited {
-        color: #c00;
-      }
-      a:hover {
-        color: #f50;
-      }
-      h1 {
-        text-align: center;
-        margin: 0;
-        padding: 0.6em 2em 0.4em;
-        background-color: #10B981;
-        color: #fff;
-        font-weight: normal;
-        font-size: 1.75em;
-        border-bottom: 2px solid #000;
-      }
-      h1 strong {
-        font-weight: bold;
-        font-size: 1.5em;
-      }
-      h2 {
-        text-align: center;
-        background-color: #10B981;
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #fff;
-        margin: 0;
-        padding: 0.5em;
-        border-bottom: 2px solid #000;
-      }
-      hr {
-        display: none;
-      }
-      .content {
-        padding: 1em 5em;
-      }
-      .alert {
-        border: 2px solid #000;
-      }
-
-      img {
-        border: 2px solid #fff;
-        padding: 2px;
-        margin: 2px;
-      }
-      a:hover img {
-        border: 2px solid #294172;
-      }
-      .logos {
-        margin: 1em;
-        text-align: center;
-      }
-      /*]]>*/
-    </style>
-  </head>
-
-  <body>
-    <h1>Welcome to <strong>nginx</strong> on Rocky Linux!</h1>
-
-    <div class="content">
-      <p>
-        This page is used to test the proper operation of the
-        <strong>nginx</strong> HTTP server after it has been installed. If you
-        can read this page, it means that the web server installed at this site
-        is working properly.
-      </p>
-
-      <div class="alert">
-        <h2>Website Administrator</h2>
-        <div class="content">
-          <p>
-            This is the default <tt>index.html</tt> page that is distributed
-            with <strong>nginx</strong> on Rocky Linux. It is located in
-            <tt>/usr/share/nginx/html</tt>.
-          </p>
-
-          <p>
-            You should now put your content in a location of your choice and
-            edit the <tt>root</tt> configuration directive in the
-            <strong>nginx</strong>
-            configuration file
-            <tt>/etc/nginx/nginx.conf</tt>.
-          </p>
-
-          <p>
-            For information on Rocky Linux, please visit the
-            <a href="https://www.rockylinux.org/">Rocky Linux website</a>. The
-            documentation for Rocky Linux is
-            <a href="https://www.rockylinux.org/"
-              >available on the Rocky Linux website</a
-            >.
-          </p>
-        </div>
-      </div>
-
-      <div class="logos">
-        <a href="http://nginx.net/"
-          ><img
-            src="nginx-logo.png"
-            alt="[ Powered by nginx ]"
-            width="121"
-            height="32"
-        /></a>
-        <a href="http://www.rockylinux.org/"><img
-            src="poweredby.png"
-            alt="[ Powered by Rocky Linux ]"
-            width="88" height="31" /></a>
-
-      </div>
-    </div>
-  </body>
-</html>
+[...]
 ```
 
 ### Modif de la conf du serveur web
@@ -464,122 +312,7 @@ C:\Users\Robert>curl http://10.200.1.69:8080
         font-family: sans-serif, helvetica;
         margin: 0;
         padding: 0;
-      }
-      :link {
-        color: #c00;
-      }
-      :visited {
-        color: #c00;
-      }
-      a:hover {
-        color: #f50;
-      }
-      h1 {
-        text-align: center;
-        margin: 0;
-        padding: 0.6em 2em 0.4em;
-        background-color: #10B981;
-        color: #fff;
-        font-weight: normal;
-        font-size: 1.75em;
-        border-bottom: 2px solid #000;
-      }
-      h1 strong {
-        font-weight: bold;
-        font-size: 1.5em;
-      }
-      h2 {
-        text-align: center;
-        background-color: #10B981;
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #fff;
-        margin: 0;
-        padding: 0.5em;
-        border-bottom: 2px solid #000;
-      }
-      hr {
-        display: none;
-      }
-      .content {
-        padding: 1em 5em;
-      }
-      .alert {
-        border: 2px solid #000;
-      }
-
-      img {
-        border: 2px solid #fff;
-        padding: 2px;
-        margin: 2px;
-      }
-      a:hover img {
-        border: 2px solid #294172;
-      }
-      .logos {
-        margin: 1em;
-        text-align: center;
-      }
-      /*]]>*/
-    </style>
-  </head>
-
-  <body>
-    <h1>Welcome to <strong>nginx</strong> on Rocky Linux!</h1>
-
-    <div class="content">
-      <p>
-        This page is used to test the proper operation of the
-        <strong>nginx</strong> HTTP server after it has been installed. If you
-        can read this page, it means that the web server installed at this site
-        is working properly.
-      </p>
-
-      <div class="alert">
-        <h2>Website Administrator</h2>
-        <div class="content">
-          <p>
-            This is the default <tt>index.html</tt> page that is distributed
-            with <strong>nginx</strong> on Rocky Linux. It is located in
-            <tt>/usr/share/nginx/html</tt>.
-          </p>
-
-          <p>
-            You should now put your content in a location of your choice and
-            edit the <tt>root</tt> configuration directive in the
-            <strong>nginx</strong>
-            configuration file
-            <tt>/etc/nginx/nginx.conf</tt>.
-          </p>
-
-          <p>
-            For information on Rocky Linux, please visit the
-            <a href="https://www.rockylinux.org/">Rocky Linux website</a>. The
-            documentation for Rocky Linux is
-            <a href="https://www.rockylinux.org/"
-              >available on the Rocky Linux website</a
-            >.
-          </p>
-        </div>
-      </div>
-
-      <div class="logos">
-        <a href="http://nginx.net/"
-          ><img
-            src="nginx-logo.png"
-            alt="[ Powered by nginx ]"
-            width="121"
-            height="32"
-        /></a>
-        <a href="http://www.rockylinux.org/"><img
-            src="poweredby.png"
-            alt="[ Powered by Rocky Linux ]"
-            width="88" height="31" /></a>
-
-      </div>
-    </div>
-  </body>
-</html>
+[...]
 ```
 
 **Changer l'utilisateur qui lance le service**
@@ -630,6 +363,7 @@ sudo vi /var/www/super_site_web/index.html
 </html>
 ```
 
+On fait en sorte que le dossier et son contenue appartiennent à l'utilisateur : web.
 ```
 sudo chown web super_site_web/
 ```
@@ -665,6 +399,9 @@ root         /var/www/super_site_web;
 systemctl restart nginx.service
 ```
 
+
+Sur le PC :
+S
 ```
 C:\Users\Robert>curl http://10.200.1.69:8080
 <html>
