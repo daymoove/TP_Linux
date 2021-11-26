@@ -554,7 +554,9 @@ $ cat hosts
 
 Sur un navigateur Web sur le PC :
 
+```
 http://web.tp5.linux
+```
 
 [Screen de nextcloud](./tp5pagenextcloud.PNG)
 
